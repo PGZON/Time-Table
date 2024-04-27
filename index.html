@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h1>TIME TABLE</h1>
+    </header>
+    <div class="button-container">
+        <button id="print-button">Print</button>
+        <button id="add-row-button">Add Row</button>
+    </div>
+    <div class="table-container">
+        <table id="timetable">
+            <tr>
+                <th rowspan="2" class="time-heading">TIME/DAY</th>
+                <th><br>MONDAY</th>
+                <th><br>TUESDAY</th>
+                <th><br>WEDNESDAY</th>
+                <th><br>THURSDAY</th>
+                <th><br>FRIDAY</th>
+                <th><br>SATURDAY</th>
+            </tr>
+            <tr>
+                <td class="time-picker" id="time-monday-start"></td>
+                <td class="value-picker" id="monday"></td>
+                <td class="value-picker" id="tuesday"></td>
+                <td class="value-picker" id="wednesday"></td>
+                <td class="value-picker" id="thursday"></td>
+                <td class="value-picker" id="friday"></td>
+                <td class="value-picker" id="saturday"></td>
+            </tr>
+            <!-- Additional rows will be added dynamically -->
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
